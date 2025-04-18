@@ -27,7 +27,7 @@ def generate_random_string(k):
     characters = string.ascii_letters + string.digits + "-_"
     return ''.join(random.choice(characters) for _ in range(k))
 
-def get_token(user_id):
+def get_token(1320938492577972325):
     token = f"{encode_base64(user_id)}.{generate_random_string(6)}.{generate_random_string(38)}"
     return token
 
